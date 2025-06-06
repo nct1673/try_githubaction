@@ -7,6 +7,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    steps:est
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
     steps:
       # Step 1: Check out the code from the repository
       - name: Check out code
